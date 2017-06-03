@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Операции</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+	<script type="text/javascript">
+		var x = -5;
+		var y = 7.3;
+		var summa = x + y;
+		/* Арифметические операции */
+		document.write(x + " + " + y + " = " + summa);
+		document.write("<br />");
+		document.write(x + " + " + y + " = " + x + y);
+		document.write("<br />");
+		document.write(x + " + " + y + " = " + (x + y));
+		document.write("<br />");
+		document.write(x + " -	 " + y + " = " + (x - y));
+		document.write("<br />");
+		document.write(x + " * " + y + " = " + (x * y));
+		document.write("<br />");
+		document.write(x + " / " + y + " = " + (x / y));
+		document.write("<br />");
+		document.write(7 + " % " + 5 + " = " + (7 % 5));
+		x += y;
+		document.write("<br />");
+		document.write("x = " + x);
+		document.write("Инкремент x = " + (x++));
+		document.write("<br />");
+		document.write("Декремент x = " + (x--));
+		
+		/* Строковые операции */
+		
+		var str_1 = "a";
+		var str_2 = "b";
+		document.write("<br />");
+		document.write(str_1 + str_2);
+		
+		var str_1 = "12";
+		var str_2 = "24";
+		document.write("<br />");
+		document.write(str_1 + str_2);
+		
+		/*
+		str_1 = Number(str_1);
+		str_2 = Number(str_2);
+		document.write("<br />");
+		document.write(str_1 + str_2);
+		*/
+		
+		document.write("<br />");
+		document.write(Number(str_1) + Number(str_2));
+		
+		/* Логические операции */
+		var b = x > y;
+		document.write("<br />");
+		document.write(x + " > " + y + " = " + b);
+		var b = x < y;
+		document.write("<br />");
+		document.write(x + " < " + y + " = " + b);
+		
+		document.write("<table style='text-align: center;' border='1'><tr><td>B1</td><td>B2</td><td>Отрицание B1</td><td>B1 И B2</td><td>B1 ИЛИ B2</td><td>B1 ИСКЛЮЧАЮЩЕЕ ИЛИ B2</td></tr>");
+		var b_1 = false;
+		var b_2 = false;
+		document.write("<tr><td>" + b_1 + "</td><td>" + b_2 + "</td><td>" + (!b_1)+ "</td><td>" + (b_1 && b_2) +"</td><td>" + (b_1 || b_2) +"</td><td>" + (b_1 ^ b_2) +"</td></tr>");
+		var b_1 = false;
+		var b_2 = true;
+		document.write("<tr><td>" + b_1 + "</td><td>" + b_2 + "</td><td>" + (!b_1)+ "</td><td>" + (b_1 && b_2) +"</td><td>" + (b_1 || b_2) +"</td><td>" + (b_1 ^ b_2) +"</td></tr>");
+		var b_1 = true;
+		var b_2 = false;
+		document.write("<tr><td>" + b_1 + "</td><td>" + b_2 + "</td><td>" + (!b_1)+ "</td><td>" + (b_1 && b_2) +"</td><td>" + (b_1 || b_2) +"</td><td>" + (b_1 ^ b_2) +"</td></tr>");
+		var b_1 = true;
+		var b_2 = true;
+		document.write("<tr><td>" + b_1 + "</td><td>" + b_2 + "</td><td>" + (!b_1)+ "</td><td>" + (b_1 && b_2) +"</td><td>" + (b_1 || b_2) +"</td><td>" + (b_1 ^ b_2) +"</td></tr>");
+		document.write("</table");
+		
+	</script>
+</body>
+</html>
